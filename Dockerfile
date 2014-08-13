@@ -13,8 +13,8 @@ WORKDIR /home/user/tomcat7/bin
 CMD ./catalina.sh run
 
 # ===== Usage =====
-# FROM codenvy/jdk7_tomcat7
-# ADD $app$ /home/user/tomcat7/webapps/ROOT.war
+FROM codenvy/jdk7_tomcat7
+ADD $app$ /home/user/tomcat7/webapps/ROOT.war
 # ===== OR (debug) =====
 # FROM codenvy/jdk7_tomcat7
 # EXPOSE 8000
